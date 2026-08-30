@@ -14,7 +14,7 @@
 
 1. 월별 순매출은 어떻게 변화했는가?
 2. 변화는 구매고객 수, 구매 빈도, 객단가 중 어디에서 발생했는가?
-3. 어떤 상품군과 채널이 성과 변화를 주도했는가?
+3. 어떤 상품군과 고객 지역이 성과 변화를 주도했는가?
 4. 신규/기존 및 재구매 고객의 매출 기여는 어떻게 다른가?
 5. 다음 분기 어떤 대상을 우선 관리해야 하는가?
 
@@ -28,6 +28,18 @@
 - Repeat Purchase Rate
 - Monthly Growth
 
+## Data Source
+
+Brazilian E-Commerce Public Dataset by Olist
+
+- Real commercial ecommerce data
+- Anonymized
+- Period: 2016-2018
+- Source: Kaggle / Olist
+- License: CC BY-NC-SA 4.0
+
+Raw data is not included in this repository.
+
 ## Project Status
 
-🟡 Project design and data selection
+🟡 Data source selected / data quality validation pending
