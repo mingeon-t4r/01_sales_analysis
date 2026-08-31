@@ -1,0 +1,6 @@
+table_name,row_count,column_count,full_duplicate_count
+customers,99441,5,0
+orders,99441,9,0
+order_items,112650,7,0
+products,32951,9,0
+category_translation,71,2,0

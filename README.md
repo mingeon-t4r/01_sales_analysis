@@ -1,6 +1,6 @@
 # Sales Analysis
 
-온라인 쇼핑몰의 최근 12개월 매출 변화를
+온라인 쇼핑몰의 최근 12개월 상품 판매금액(Item Sales) 변화를
 구매고객 수, 구매 빈도와 객단가로 분해하고,
 상품·채널·고객군별 성과를 분석하는 포트폴리오 프로젝트입니다.
 
@@ -20,10 +20,10 @@
 
 ## Core Metrics
 
-- Net Sales
-- Orders
-- Buyers
-- Average Order Value
+- Item Sales
+- Order Count
+- Buyer Count
+- Average Item Sales per Order
 - Orders per Buyer
 - Repeat Purchase Rate
 - Monthly Growth
