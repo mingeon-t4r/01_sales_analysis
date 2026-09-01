@@ -89,16 +89,24 @@ The channel analysis originally planned
 will be removed or replaced by
 customer region analysis.
 
-## 6. Next Step
+## 6. Data Quality Validation
 
-Day 40 will validate:
+Day 40 validation confirmed:
 
-- row count
-- data types
-- missing values
-- duplicate keys
-- foreign key matching
-- date range
-- order status
+- Primary Key integrity
+- Foreign Key matching
+- date coverage
+- order status distribution
 - price range
-- actual usable analysis period
+- table grain
+- customer key structure
+
+The latest usable complete 12-month period
+is defined as:
+
+2017-09-01 <= order_purchase_timestamp < 2018-09-01
+
+## 7. Next Step
+
+Build reproducible SQLite analysis tables
+for order-item and order-level analysis.

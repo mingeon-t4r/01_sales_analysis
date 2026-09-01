@@ -1,4 +1,6 @@
-## Day 1 데이터 분석 결과
+# Olist Data Quality Report
+
+## Data Structure
 
 ### 데이터 구조
 
@@ -10,11 +12,12 @@
 
 ### Key 검증
 
-- customer_id 중복: 0
-- customer_unique_id 고유 고객 수: 96096
-- order_id 중복: 13984
-- order_id + order_item_id 중복: 0
-- product_id 중복: 0
+- customers.customer_id 중복: 0
+- customers.customer_unique_id 고유 고객 수: 96,096
+- orders.order_id 중복: 0
+- order_items.order_id 반복 행 수: 13,984
+- order_items의 (order_id, order_item_id) 중복: 0
+- products.product_id 중복: 0
 
 ### Foreign Key 검증
 
@@ -28,7 +31,7 @@
 - 최초 주문일: 2016-09-04
 - 마지막 주문일: 2018-10-17
 - 날짜 변환 실패: 0
-- 실제 분석 후보 기간: 2017년 1월 ~ 2017년 12월 완전한 최근 12개월
+- 실제 분석 기간: 2017-09-01 ~ 2018-08-31
 
 ### 주문 상태
 
