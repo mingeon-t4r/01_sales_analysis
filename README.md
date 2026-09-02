@@ -42,4 +42,4 @@ Raw data is not included in this repository.
 
 ## Project Status
 
-🟡 Data quality validated / SQL analysis table pending
+🟡 SQL analysis tables built / monthly KPI analysis pending
