@@ -19,7 +19,7 @@
 - 수량과 가격 범위 확인
 - 결측값 확인
 
-## Phase 3 - SQL Analysis Tables
+## Phase 3 - SQL Analysis Tables ✅ Completed
 
 Item-level analysis table:
 
@@ -47,7 +47,7 @@ JOIN 이후 반드시 확인:
 - Composite Key 중복
 - Item Sales 합계
 
-## Phase 4 - KPI
+## Phase 4 - KPI ✅ Completed
 
 월별:
 
