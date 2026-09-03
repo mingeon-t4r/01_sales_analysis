@@ -40,6 +40,12 @@ Brazilian E-Commerce Public Dataset by Olist
 
 Raw data is not included in this repository.
 
+## Key Findings
+
+- Item Sales의 최대 월간 증가는 2017년 11월에 발생했으며 Buyer Count 증가가 함께 나타났다.
+- 11월 성장에는 bed_bath_table, health_beauty 카테고리의 Item Sales 증가가 크게 기여했다.
+- 12월 감소에는 bed_bath_table, computers_accessories 카테고리의 감소폭이 크게 나타났다.
+
 ## Project Status
 
-🟡 Monthly KPI analysis completed / category and customer analysis pending
+🟡 Category performance analysis completed / customer segmentation pending
