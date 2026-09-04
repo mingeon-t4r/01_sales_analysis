@@ -62,8 +62,8 @@ JOIN 이후 반드시 확인:
 
 - Product Category ✅
 - Customer Region
-- New vs Existing Customer
-- Repeat Customer
+- New vs Existing Customer ✅
+- Repeat Customer ✅
 
 ## Phase 6 - Interpretation
 
