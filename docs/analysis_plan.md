@@ -58,10 +58,10 @@ JOIN 이후 반드시 확인:
 - Orders per Buyer
 - Monthly Growth
 
-## Phase 5 - Segmentation 🟡 In Progress
+## Phase 5 - Segmentation ✅ Completed
 
 - Product Category ✅
-- Customer Region
+- Customer Region ✅
 - New vs Existing Customer ✅
 - Repeat Customer ✅
 

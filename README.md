@@ -45,8 +45,9 @@ Raw data is not included in this repository.
 - Item Sales의 최대 월간 증가는 2017년 11월에 발생했으며 Buyer Count 증가가 함께 나타났다.
 - 11월 성장에는 bed_bath_table, health_beauty 카테고리의 Item Sales 증가가 크게 기여했다.
 - 12월 감소에는 bed_bath_table, computers_accessories 카테고리의 감소폭이 크게 나타났다.
-- 신규 고객은 전체 Buyer의 99.23%를 차지했으며, 관찰 가능한 신규 고객의 90일 재구매율은 1%였다.
+- 신규 고객은 전체 Buyer의 99.23%를 차지했으며, 관찰 가능한 신규 고객의 90일 재구매율은 1.3%였다.
+- Item Sales는 SP 지역에 가장 크게 집중됐으며, 11월 증가와 12월 감소에서도 SP 지역의 절대 변화폭이 크게 나타났다.
 
 ## Project Status
 
-🟡 Customer lifecycle analysis completed / customer region analysis pending
+🟡 Segmentation analysis completed / business interpretation pending
