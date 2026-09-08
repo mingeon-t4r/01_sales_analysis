@@ -48,6 +48,12 @@ Raw data is not included in this repository.
 - 신규 고객은 전체 Buyer의 99.23%를 차지했으며, 관찰 가능한 신규 고객의 90일 재구매율은 1.3%였다.
 - Item Sales는 SP 지역에 가장 크게 집중됐으며, 11월 증가와 12월 감소에서도 SP 지역의 절대 변화폭이 크게 나타났다.
 
+## Business Priorities
+
+- Maintain: 대규모 판매 기반을 가진 SP와 주요 상위 상품군의 성과를 지속 모니터링한다.
+- Recovery Review: 12월 SP x bed_bath_table 조합을 우선 점검한다.
+- Validate: 신규 고객 의존도가 높으므로 카테고리·코호트별 90일 재구매 구조를 추가 검증한다.
+
 ## Project Status
 
-🟡 Segmentation analysis completed / business interpretation pending
+🟡 Business recommendations completed / final report and reproducibility review pending

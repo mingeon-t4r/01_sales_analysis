@@ -41,9 +41,9 @@ A new customer with another delivered order
 
 ## 90-day Repeat
 
-- Eligible New Customers:
-- Repeat Customers:
-- Repeat Rate:
+- Eligible New Customers: 54038
+- Repeat Customers: 693
+- Repeat Rate: 1.28%
 
 ## Limitations
 

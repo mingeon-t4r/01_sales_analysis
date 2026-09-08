@@ -65,26 +65,29 @@ JOIN 이후 반드시 확인:
 - New vs Existing Customer ✅
 - Repeat Customer ✅
 
-## Phase 6 - Interpretation
+## Phase 6 - Interpretation ✅ Completed
 
-매출 변화를:
+Item Sales 변화를:
 
 - Buyer Count
 - Purchase Frequency
-- Average Order Value
+- Average Item Sales per Order
+- Product Category
+- Customer Lifecycle
+- Customer Region
 
-관점으로 분해한다.
+관점으로 통합 해석했다.
 
-## Phase 7 - Business Recommendation
+## Phase 7 - Business Recommendation ✅ Completed
 
 - 유지 대상
-- 회복 대상
-- 상품 우선순위
-- 지역별 성과 점검 대상
+- 회복 검토 대상
+- 재구매 추가 검증 대상
+- 추가 필요 데이터
 
-을 근거와 함께 제안한다.
+를 분석 근거와 함께 제안했다.
 
-## Phase 8 - Limitations
+## Phase 8 - Limitations 🟡 In Progress
 
 - 데이터 범위
 - 환불/비용 포함 여부

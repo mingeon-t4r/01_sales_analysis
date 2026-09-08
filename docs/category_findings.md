@@ -58,7 +58,7 @@ Largest negative category changes:
 
 Key interpretation:
 
-- 2017년 12월 Item Sales는 전월 대비 -26.5% 감소했다. 이 시기 Buyer Count도 -24.1% 감소했으며, 카테고리 기준으로는 bed_bath_table과 computers_accessories의 판매금액 감소폭이 가장 컸다. 따라서 12월 축소는 특정 카테고리 한 곳에만 집중됐다기보다 구매고객 확대와 여러 주요 카테고리의 판매 감소가 함께 나타난 시기로 해석할 수 있다.
+- 2017년 12월 Item Sales는 전월 대비 -26.5% 감소했다. 이 시기 Buyer Count도 -24.1% 감소했으며, 카테고리 기준으로는 bed_bath_table과 computers_accessories의 판매금액 감소폭이 가장 컸다. 따라서 12월 축소는 특정 카테고리 한 곳에만 집중됐다기보다 구매고객 감소와 여러 주요 카테고리의 판매 감소가 함께 나타난 시기로 해석할 수 있다.
 
 ## Limitations
 

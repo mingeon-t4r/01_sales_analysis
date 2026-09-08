@@ -37,11 +37,11 @@ delivered
 
 ### High Item Sales per Buyer States
 
-- BA
+- PB
 
-Key Interpretation: 
+Key Interpretation: SP는 Item Sales와 Buyer Count가 모두 가장 큰 지역이다.
 
-- 가장 판매 규모가 큰 지역은 SP 이지만 고객당 판매금액이 높은게 아니라 고객의 규모가 큰 것이다.
+- SP의 Item Sales per Buyer는 128.53으로, 높은 Item Sales 규모가 고객당 판매금액보다는 큰 Buyer 기반과 함께 나타났다.
 
 ## November 2017 Growth
 
