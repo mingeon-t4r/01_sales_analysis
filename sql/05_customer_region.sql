@@ -48,7 +48,7 @@ SELECT
 			DISTINCT customer_unique_id
 		),
 		4
-	) AS order_per_buyer,
+	) AS orders_per_buyer,
 	
 	round(
 		sum(item_sales) * 1.0
@@ -170,7 +170,7 @@ GROUP BY
 ORDER BY
 	item_sales_change DESC;
 	
--- 2017년 12월 지역별 Item Sales qusghk
+-- 2017년 12월 지역별 Item Sales 변화
 SELECT
 	customer_state,
 	
@@ -183,7 +183,7 @@ SELECT
 			END
 		),
 		2
-	) AS october_item_sales,
+	) AS november_item_sales,
 	
 	round(
 		sum(
@@ -194,7 +194,7 @@ SELECT
 			END
 		),
 		2
-	) AS november_item_sales,
+	) AS december_item_sales,
 	
 	round(
 		sum(

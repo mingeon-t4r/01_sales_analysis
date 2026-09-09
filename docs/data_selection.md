@@ -24,11 +24,11 @@ CC BY-NC-SA 4.0
 This dataset was selected because it provides
 relational ecommerce data that can support:
 
+- multi-table sales, customer and product analysis
 - monthly sales analysis
 - customer purchase analysis
 - repeat purchase analysis
 - product category analysis
-- SQL JOIN practice
 - customer and order level KPI analysis
 
 ## 3. Main Files
@@ -85,13 +85,12 @@ The initial sales metric will be defined as:
 
 Item Sales = SUM(price)
 
-The channel analysis originally planned
-will be removed or replaced by
-customer region analysis.
+Sales channel data is unavailable.
+Customer State is therefore used for geographic segmentation.
 
 ## 6. Data Quality Validation
 
-Day 40 validation confirmed:
+Data quality validation confirmed:
 
 - Primary Key integrity
 - Foreign Key matching
@@ -105,8 +104,3 @@ The latest usable complete 12-month period
 is defined as:
 
 2017-09-01 <= order_purchase_timestamp < 2018-09-01
-
-## 7. Next Step
-
-Build reproducible SQLite analysis tables
-for order-item and order-level analysis.

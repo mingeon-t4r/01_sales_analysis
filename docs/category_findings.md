@@ -20,9 +20,9 @@ delivered
 
 ### Sales Concentration
 
-- Top 1 category share: 0.0968
-- Top 5 category share: 0.4050
-- Top 10 category share: 0.6236
+- Top 1 category share: 9.68%
+- Top 5 category share: 40.50%
+- Top 10 category share: 62.36%
 
 ## November 2017 Growth
 

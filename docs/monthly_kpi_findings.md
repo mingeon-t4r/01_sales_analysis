@@ -33,7 +33,7 @@ Buyer Count
    - Avg Item Sales per Order Growth: -2.8%
 
 3. 핵심 해석:
-   - Item Sales 의 변화에 Buyer 의 변화가 산술적으로 함께 나타났다.
+   - Item Sales의 큰 월간 변동은 Orders per Buyer나 Average Item Sales per Order보다 Buyer Count 변화와 더 크게 함께 나타났다.
 
 ## Limitations
 

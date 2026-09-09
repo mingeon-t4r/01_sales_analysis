@@ -104,283 +104,135 @@ GROUP BY
 ORDER BY
 	product_category,
 	order_month;
-	
--- 카테고리별 전월 대비 성장률
 
-WITH monthly_category_sales AS (
-
-    SELECT
-        order_month,
-
-        coalesce(
-            product_category,
-            'unknown'
-        ) AS product_category,
-
-        sum(
-            item_price
-        ) AS item_sales
-
-    FROM analysis_order_items
-
-    GROUP BY
-        order_month,
-        coalesce(
-            product_category,
-            'unknown'
-        )
-),
-
-category_growth AS (
-
-    SELECT
-        order_month,
-        product_category,
-        item_sales,
-
-        lag(
-            item_sales
-        ) OVER (
-            PARTITION BY product_category
-            ORDER BY order_month
-        ) AS previous_item_sales
-
-    FROM monthly_category_sales
-)
+-- 2017년 11월 카테고리별 Item Sales 변화
 
 SELECT
-    order_month,
-    product_category,
-
-    round(
-        item_sales,
-        2
-    ) AS item_sales,
-
-    round(
-        previous_item_sales,
-        2
-    ) AS previous_item_sales,
-
-    round(
-        item_sales * 1.0
-        / previous_item_sales
-        - 1,
-        4
-    ) AS item_sales_growth
-
-FROM category_growth
-
-ORDER BY
-    product_category,
-    order_month;
-	
--- 카테고리 매출 증감액
-WITH monthly_category_sales AS (
-
-    SELECT
-        order_month,
-
-        coalesce(
-            product_category,
-            'unknown'
-        ) AS product_category,
-
-        sum(
-            item_price
-        ) AS item_sales
-
-    FROM analysis_order_items
-
-    GROUP BY
-        order_month,
-        coalesce(
-            product_category,
-            'unknown'
-        )
-),
-
-category_change AS (
-
-    SELECT
-        order_month,
+    coalesce(
         product_category,
-        item_sales,
-
-        lag(
-            item_sales
-        ) OVER (
-            PARTITION BY product_category
-            ORDER BY order_month
-        ) AS previous_item_sales
-
-    FROM monthly_category_sales
-)
-
-SELECT
-    order_month,
-    product_category,
+        'unknown'
+    ) AS product_category,
 
     round(
-        item_sales,
-        2
-    ) AS item_sales,
-
-    round(
-        previous_item_sales,
-        2
-    ) AS previous_item_sales,
-
-    round(
-        item_sales
-        - previous_item_sales,
-        2
-    ) AS item_sales_change
-
-FROM category_change
-
-ORDER BY
-    order_month,
-    item_sales_change DESC;
-	
--- 11월 성장기여 카테고리
-WITH monthly_category_sales AS (
-
-    SELECT
-        order_month,
-
-        coalesce(
-            product_category,
-            'unknown'
-        ) AS product_category,
-
         sum(
-            item_price
-        ) AS item_sales
-
-    FROM analysis_order_items
-
-    GROUP BY
-        order_month,
-        coalesce(
-            product_category,
-            'unknown'
-        )
-),
-
-category_change AS (
-
-    SELECT
-        order_month,
-        product_category,
-        item_sales,
-
-        lag(
-            item_sales
-        ) OVER (
-            PARTITION BY product_category
-            ORDER BY order_month
-        ) AS previous_item_sales
-
-    FROM monthly_category_sales
-)
-
-SELECT
-    product_category,
-
-    round(
-        previous_item_sales,
+            CASE
+                WHEN order_month = '2017-10'
+                THEN item_price
+                ELSE 0
+            END
+        ),
         2
     ) AS october_item_sales,
 
     round(
-        item_sales,
+        sum(
+            CASE
+                WHEN order_month = '2017-11'
+                THEN item_price
+                ELSE 0
+            END
+        ),
         2
     ) AS november_item_sales,
 
     round(
-        item_sales
-        - previous_item_sales,
+        sum(
+            CASE
+                WHEN order_month = '2017-11'
+                THEN item_price
+                ELSE 0
+            END
+        )
+        -
+        sum(
+            CASE
+                WHEN order_month = '2017-10'
+                THEN item_price
+                ELSE 0
+            END
+        ),
         2
     ) AS item_sales_change
 
-FROM category_change
+FROM analysis_order_items
 
 WHERE
-    order_month = '2017-11'
+    order_month IN (
+        '2017-10',
+        '2017-11'
+    )
+
+GROUP BY
+    coalesce(
+        product_category,
+        'unknown'
+    )
 
 ORDER BY
-    item_sales_change DESC
+    item_sales_change DESC;
 
-LIMIT 10;
-
--- 12월 감소 카테고리
-WITH monthly_category_sales AS (
-
-    SELECT
-        order_month,
-
-        coalesce(
-            product_category,
-            'unknown'
-        ) AS product_category,
-
-        sum(
-            item_price
-        ) AS item_sales
-
-    FROM analysis_order_items
-
-    GROUP BY
-        order_month,
-        coalesce(
-            product_category,
-            'unknown'
-        )
-),
-
-category_change AS (
-
-    SELECT
-        order_month,
-        product_category,
-        item_sales,
-
-        lag(
-            item_sales
-        ) OVER (
-            PARTITION BY product_category
-            ORDER BY order_month
-        ) AS previous_item_sales
-
-    FROM monthly_category_sales
-)
+-- 2017년 12월 카테고리별 Item Sales 변화
 
 SELECT
-    product_category,
+    coalesce(
+        product_category,
+        'unknown'
+    ) AS product_category,
 
     round(
-        previous_item_sales,
+        sum(
+            CASE
+                WHEN order_month = '2017-11'
+                THEN item_price
+                ELSE 0
+            END
+        ),
         2
     ) AS november_item_sales,
 
     round(
-        item_sales,
+        sum(
+            CASE
+                WHEN order_month = '2017-12'
+                THEN item_price
+                ELSE 0
+            END
+        ),
         2
     ) AS december_item_sales,
 
     round(
-        item_sales
-        - previous_item_sales,
+        sum(
+            CASE
+                WHEN order_month = '2017-12'
+                THEN item_price
+                ELSE 0
+            END
+        )
+        -
+        sum(
+            CASE
+                WHEN order_month = '2017-11'
+                THEN item_price
+                ELSE 0
+            END
+        ),
         2
     ) AS item_sales_change
 
-FROM category_change
+FROM analysis_order_items
 
 WHERE
-    order_month = '2017-12'
+    order_month IN (
+        '2017-11',
+        '2017-12'
+    )
+
+GROUP BY
+    coalesce(
+        product_category,
+        'unknown'
+    )
 
 ORDER BY
-    item_sales_change
-
-LIMIT 10;
+    item_sales_change;

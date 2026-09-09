@@ -16,7 +16,8 @@
 - Foreign Key 미매칭 확인
 - 날짜 범위 확인
 - 주문 상태 확인
-- 수량과 가격 범위 확인
+- 가격 범위 확인
+- 주문상품 행 구조 확인
 - 결측값 확인
 
 ## Phase 3 - SQL Analysis Tables ✅ Completed

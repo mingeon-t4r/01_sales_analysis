@@ -33,13 +33,13 @@ delivered
 
 ### High Buyer Count States
 
-- SP
+- SP: 30937 Buyers
 
 ### High Item Sales per Buyer States
 
-- PB
+- PB: 232.82 (377 Buyers)
 
-Key Interpretation: SP는 Item Sales와 Buyer Count가 모두 가장 큰 지역이다.
+Key Interpretation: PB는 Item Sales per Buyer가 가장 높았지만 Buyer 규모가 작으므로 일부 고액 주문의 영향을 받을 수 있다. 따라서 지역 우선순위는 전체 Item Sales와 Buyer Count를 함께 고려한다.
 
 - SP의 Item Sales per Buyer는 128.53으로, 높은 Item Sales 규모가 고객당 판매금액보다는 큰 Buyer 기반과 함께 나타났다.
 

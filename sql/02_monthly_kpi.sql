@@ -21,7 +21,7 @@ SELECT
 	count(*) * 1.0
 	/ count(
 		DISTINCT customer_unique_id
-	) AS order_per_buyer
+	) AS orders_per_buyer
 	
 FROM analysis_orders
 

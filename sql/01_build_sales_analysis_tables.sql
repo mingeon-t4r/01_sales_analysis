@@ -201,7 +201,7 @@ SELECT
     ) AS buyer_count
 FROM analysis_orders;
 
--- mini 분석
+-- 월별 기본 KPI 확인
 SELECT
     order_month,
 

@@ -23,9 +23,9 @@ A new customer with another delivered order
 
 ## Monthly Customer Mix
 
-- Highest New Buyer Share: 0.982876
-- Highest Existing Buyer Share: 0.030193
-- Highest Existing Item Sales Share: 0.029645
+- Highest New Buyer Share: 98.29% (2017-11)
+- Highest Existing Buyer Share: 3.02% (2018-06)
+- Highest Existing Item Sales Share: 2.96% (2018-06)
 
 ## November 2017 Growth
 
@@ -37,7 +37,7 @@ A new customer with another delivered order
 
 - New Customer Item Sales Change: -262770.48
 - Existing Customer Item Sales Change: 1038.30
-- Key Interpretation: 12월의 전체 Item Sales 감소는 기존 고객의 구매 이탈보다는 신규 구매고객 수 규모 축소와 더 강하게 함께 나타난 것으로 해석할 수 있다.
+- Key Interpretation: 12월에는 기존 고객 Item Sales가 소폭 증가한 반면 신규 고객 Item Sales가 크게 감소했다. 따라서 전체 Item Sales 감소는 신규 구매고객 규모 축소와 더 크게 함께 나타난 것으로 해석할 수 있다.
 
 ## 90-day Repeat
 
