@@ -60,10 +60,10 @@ JOIN 이후 반드시 확인:
 
 ## Phase 5 - Segmentation ✅ Completed
 
-- Product Category ✅
-- Customer Region ✅
-- New vs Existing Customer ✅
-- Repeat Customer ✅
+- Product Category 
+- Customer Region 
+- New vs Existing Customer 
+- Repeat Customer 
 
 ## Phase 6 - Interpretation ✅ Completed
 
@@ -87,10 +87,11 @@ Item Sales 변화를:
 
 를 분석 근거와 함께 제안했다.
 
-## Phase 8 - Limitations 🟡 In Progress
+## Phase 8 - Limitations ✅ Completed
 
-- 데이터 범위
-- 환불/비용 포함 여부
-- 관찰 데이터의 인과 한계
-- 계절성
-- 외부 요인
+- 데이터 범위 
+- 환불/비용 포함 여부 
+- 관찰 데이터의 인과 한계 
+- 계절성 
+- 외부 요인 
+- 재현성 검증 
