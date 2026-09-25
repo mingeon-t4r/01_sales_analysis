@@ -1,77 +1,60 @@
 # Tableau Dashboard
 
-## Status
-
-Day 1 - Tableau environment setup completed.
-
-## Environment
-
-- OS: Windows 11
-- Tool: Tableau Desktop Public Edition
-- Publishing: Tableau Public
-
-## Data
-
-No Tableau data connection was created on Day 1.
-
-Existing project data will be reviewed before selecting
-the Tableau data source.
-
-## Tableau Public
-
-Dashboard URL: Not published yet.
-
-# Tableau Dashboard
-
 ## Dashboard
 
 Sales Performance Dashboard
 
 ## Status
 
-Day 2 - Tableau fundamentals and dashboard draft completed.
+Day 3 - Project #1 dashboard completed.
 
 ## Data Source
 
-- Source: tableau_analysis_orders.csv
-- Grain: 1 row = 1 order_id
-- Primary Key: order_id
-- Date Range: 2017-09 ~ 2018-08
+Final Tableau source:
 
-## KPI Definitions
+- `tableau_analysis_order_items.csv`
+- Grain: 1 row = 1 order_id × order_item_id
+- Analysis period: 2017-09-01 ~ 2018-08-31
+- Included order status: delivered
 
-### Item Sales
+## KPI
 
-Uses the same validated sales definition as the existing Project #1 SQL/Python analysis.
-
-### Order Count
-
-COUNTD(order_id)
-
-### Buyer Count
-
-Uses the same validated customer key as Project #1.
-
-### Average Order Value
-
-Item Sales / Order Count
+- Item Sales
+- Order Count
+- Buyer Count
+- Average Item Sales per Order
 
 ## Worksheets
 
-- KPI - Item Sales
-- KPI - Orders
-- KPI - Buyers
-- KPI - AOV
+- Item Sales
+- Orders
+- Buyers
+- AOV
 - Monthly Sales Trend
 - Regional Performance
+- Category Performance
+
+## Filters
+
+### Dashboard Filters
+
+- Order Purchase Timestamp
+- Customer State
+- Product Category
+
+### Local Worksheet Filter
+
+Category Performance:
+
+- Top 10 Product Category by SUM(Item Sales)
 
 ## Validation
 
-- Item Sales: <PASS>
-- Order Count: <PASS>
-- Buyer Count: <PASS>
-- AOV: <PASS>
+- Overall KPI: PASS
+- Monthly KPI: PASS
+- Category Performance: PASS
+- Regional Performance: PASS
 
 ## Tableau Public
 
-Not published yet.
+Final publication scheduled for Day 5.
