@@ -101,6 +101,17 @@ Item Sales 상위 5개 State는 전체의 **74.32%**를 차지했습니다.
 SP의 판매 규모가 큰 것은 고객당 Item Sales가 특별히 높아서라기보다  
 큰 Buyer 기반과 함께 나타난 결과로 해석했습니다.
 
+### Tableau Dashboard
+
+기존 SQL/Python 분석 결과를 기반으로
+주요 판매 KPI와 지역·상품 카테고리별 성과를
+직접 탐색할 수 있는 Tableau Dashboard를 구성했습니다.
+
+![Sales Performance Dashboard](tableau/screenshots/sales_performance_dashboard.png)
+
+- [Tableau Public에서 대시보드 보기](https://public.tableau.com/views/OlistSalesPerformanceDashboard/SalesPerformanceDashboard?:language=ko-KR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- [Tableau 작업 상세](tableau/README.md)
+
 ---
 
 ## 3. Business Priorities
