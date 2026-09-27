@@ -369,6 +369,12 @@ Grain:
 │   ├── 05_customer_region.sql
 │   └── 06_business_priority_validation.sql
 │
+├── tableau/
+│   ├── screenshots/
+│   │   └── sales_performance_dashboard.png
+│   ├── sales_performance_dashboard.twb
+│   └── README.md
+│
 ├── .gitignore
 ├── README.md
 └── requirements.txt
