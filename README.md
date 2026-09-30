@@ -15,6 +15,17 @@ Brazilian E-Commerce Public Dataset by Olist를 활용하여
 관점으로 판매 변화를 분해하고,  
 다음 운영 기간의 우선 관리 대상을 제안하는 것을 목표로 했습니다.
 
+## At a Glance
+
+- **Business Question:** 최근 12개월 Item Sales 변화는 어떤 KPI와 고객·상품·지역 요인에서 발생했는가?
+- **Analysis Scope:** 2017-09-01 ~ 2018-08-31, delivered orders
+- **Customer Key:** `customer_unique_id`
+- **Core Metrics:** Item Sales, Order Count, Buyer Count, Orders per Buyer, Average Item Sales per Order
+- **Key Finding:** 2017년 11월과 12월의 큰 판매 변동은 주문당 판매금액보다 Buyer Count 변화와 더 크게 함께 나타났다.
+- **Business Priority:** 대규모 판매 기반인 SP와 주요 상위 카테고리를 지속 모니터링하고, 감소폭이 컸던 State × Category 조합을 우선 점검한다.
+- **Tools:** SQL, SQLite, Python, pandas, matplotlib, Tableau
+- **Dashboard:** [Tableau Public](https://public.tableau.com/views/OlistSalesPerformanceDashboard/SalesPerformanceDashboard?:language=ko-KR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) · [Tableau Documentation](tableau/README.md)
+
 ---
 
 ## 1. Project Goal
@@ -54,6 +65,10 @@ Buyer Count 변화가 Item Sales 변화와 더 크게 함께 나타났습니다.
 이 중 **693명**이 첫 구매 후 90일 이내 다시 구매했습니다.
 
 따라서 관찰된 **90일 재구매율은 1.28%**였습니다.
+
+> **Note:** 이 지표는 Project #1의 판매·고객 구조를 설명하기 위한 descriptive lifecycle metric입니다.
+> Project #2의 Primary Modeling Target인 `repeat_90d_after_1h`과는
+> 주문 기준, 예측 시점, 관찰 대상 정의가 다르므로 두 재구매율을 직접 비교하지 않습니다.
 
 ![Monthly Customer Segment](reports/figures/monthly_new_existing_item_sales.png)
 
